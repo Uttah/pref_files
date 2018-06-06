@@ -138,5 +138,5 @@ RGREP_COLOR=$RGREP_COLOR:'1;33:' ; export RGREP_COLOR
 function dayweek() {
 echo "$(date --date=$1 +%A)";
 }
-df -h | grep ^\/dev
+df -h | grep -E "Filesystem|^\/dev"
 LS_COLORS=$LS_COLORS:'di=1;36:ex=1;31:mh=00;00;44:*.tar=01;33:*.tgz=01;33:*.arc=01;33:*.arj=01;33:*.taz=01;33:*.lha=01;33:*.lz4=01;33:*.lzh=01;33:*.lzma=01;33:*.tlz=01;33:*.txz=01;33:*.tzo=01;33:*.t7z=01;33:*.zip=01;33:*.z=01;33:*.Z=01;33:*.dz=01;33:*.gz=01;33:*.lrz=01;33:*.lz=01;33:*.lzo=01;33:*.xz=01;33:*.zst=01;33:*.tzst=01;33:*.bz2=01;33:*.bz=01;33:*.tbz=01;33:*.tbz2=01;33:*.tz=01;33:*.deb=01;33:*.rpm=01;33:*.jar=01;33:*.war=01;33:*.ear=01;33:*.sar=01;33:' ; export LS_COLORS
